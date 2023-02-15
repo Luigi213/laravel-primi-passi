@@ -15,9 +15,6 @@
             header{
                 width: 80%;
                 margin: 20px auto;
-            }
-
-            h1{
                 text-align: center;
             }
         </style>
@@ -25,6 +22,8 @@
     <body>
         <header>
             <h1>ciao {{ $name }}</h1>
+            <br>
+            <a href="{{ route('home') }}">torna indietro</a>
         </header>
     </body>
 </html>
