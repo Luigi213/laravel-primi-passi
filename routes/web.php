@@ -16,3 +16,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('hello_word');
 })->name('home');
+
+Route::get('/contatti', function () {
+    $ciao = [
+        "name" => "pippo",
+        "id" => 3
+    ];
+    return view('contatti', $ciao);
+})->name('contacts');

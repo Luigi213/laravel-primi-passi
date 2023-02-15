@@ -17,23 +17,14 @@
                 margin: 20px auto;
             }
 
-            ul{
-                list-style: none;
-                display: flex;
-                justify-content: center;
-            }
-
-            li{
-                margin: 10px;
+            h1{
+                text-align: center;
             }
         </style>
     </head>
     <body>
         <header>
-            <ul>
-                <li><em>Hello word</em></li>
-                <li><a href="{{ route('contacts') }}">contact</a></li>
-            </ul>
+            <h1>ciao {{ $name }}</h1>
         </header>
     </body>
 </html>
